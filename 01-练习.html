@@ -1,0 +1,66 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>三行两列宽度固定布局</title>
+<style type="text/css">
+* {
+	margin:2;
+	padding:0;
+}
+body {
+	font-family:"微软雅黑";
+	font-size:20px;
+}/*设置页面全局参数*/
+#wrap {
+	margin:0 auto;
+	width:900px;
+}/*设置页面容器的宽度，并居中放置*/
+#header {
+	height:50px;
+	width:900px;
+	background:#6cf;
+	margin-bottom:5px;
+}/*设置页面头部信息区域*/
+#container {
+	width:898px;
+           border:1px solid;
+	height:200px;
+	margin-bottom:5px;
+
+}/*设置页面中部区域*/
+#mainBox {
+	float:left;/*因为是固定宽度，采用浮动方法可避免ie 3像素bug*/
+	width:680px;
+	height:200px;
+        margin:3px;
+                 border:1px solid;
+               //  border-radius:12px;
+	background:#cff;
+}/*设置页面主内容区域*/
+#sideBox {
+	float:right;
+	width:200px;
+	height:200px;
+	background:#9ff; margin:3px;
+  border:1px solid;
+}/*设侧边栏区域*/
+#footer {
+	width:900px;
+	height:50px;
+	background:#6cf;
+}/*设置页面底部区域*/
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div id="header">这里是header区域</div>
+  <div id="container">
+    <div id="mainBox">这里是主要内容</div>
+    <div id="sideBox">这里是侧边栏</div>
+  </div>
+  <div id="footer">这里是footer区域，放置版权信息等内容</div>
+</div>
+</body>
+</html>
